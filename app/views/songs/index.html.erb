@@ -1,0 +1,18 @@
+
+<h1>Songs</h1>
+<tbody>
+
+
+<%@songs.each do |song| %>
+
+<tr>
+  <p><%=link_to(song.title, song_path(song))%></p>
+</tr>
+
+
+
+  <p><%=song.artist_name%></p>
+
+
+<%end %>
+</tbody>
